@@ -1,0 +1,102 @@
+body {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.card {
+  width: 350px;
+  height: 450px;
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+}
+
+.icone{
+  display: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  z-index: 1;
+  width: 350px;
+  height: 450px;
+}
+
+.card:hover .icon, .icone.card:hover .info
+{
+  transform: translateY(-20px);
+  transition: .3s;
+}
+
+.icone:hover .save{
+  transform: translateY(8px);
+  transition: .2s;
+  transition-timing-function: linear;
+}
+
+.card:hover .icone{
+  display: block;
+  transition: 0.5s;
+}
+
+.save {
+  background-color: red;
+  color: white;
+  position: absolute;
+  width: 70px;
+  height: 40px;
+  border-radius: 40px;
+  text-align: center;
+  line-height: 40px;
+  right: 20px;
+  top: 3px; 
+}
+
+.info {
+  position: absolute;
+  background-color: whitesmoke;
+  width: 160px;
+  height: 40px;
+  border-radius: 40px;
+  line-height: 40px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  bottom: 5px;
+  left: 20px;
+  padding: 0.10px;
+}
+
+.download {
+  position: absolute;
+  background-color: whitesmoke;
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  line-height: 40px;
+  text-align: center;
+  bottom: 5px;
+  right: 80px;
+  z-index: 3;
+}
+
+.option {
+  position: absolute;
+  background-color: whitesmoke;
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  line-height: 45px;
+  text-align: center;
+  bottom: 5px;
+  right: 30px;
+}
